@@ -16,6 +16,7 @@ test enhancement
         user.userName = "xxx"; // 1. test failed
         //user.setUserName("xxx");  //2. compile complains in IDE, but test succeeded
         //SysUser.updeteUserName(user, "xxx");  //3. test succeeded
+        Ebean.save(user);
         Assert.assertEquals("after saving", "xxx", SysUser.findById(1L).userName);
     }
 
