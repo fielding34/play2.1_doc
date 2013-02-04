@@ -36,5 +36,5 @@ how to run the test？
 play test     
 
 // run the specified test
-play test-only package.Test
+play "test-only package.Test"
 ```
