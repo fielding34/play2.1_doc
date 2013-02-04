@@ -26,3 +26,15 @@ test enhancement
 2. There is no explicitly setUserName in SysUser object, so you will get compile error;
     But play will compile app directory first and add getter and setter for each model, so test passed;
 3. Add a method into app directly to use automatic magic enhancement;
+
+
+how to run the test？
+------
+
+```
+// run all the tests
+play test     
+
+// run the specified test
+play test-only package.Test
+```
